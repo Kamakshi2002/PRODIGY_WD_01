@@ -1,0 +1,61 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: aquamarine;
+    transition: background-color 0.3s ease;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 0;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #000000;
+    background-color: rgb(253, 253, 253);
+    border-radius: 4px;
+}
+
+/* Scroll change */
+.navbar.scrolled {
+    background-color: #00d0ff;
+}
+
+/* Section Styling */
+section {
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+#home { background: #f4f4f4; }
+#about { background: #e2e2e2; }
+#services { background: #ccc; }
+#contact { background: #b3b3b3; }
